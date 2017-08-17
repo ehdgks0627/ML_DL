@@ -1,6 +1,7 @@
 import tensorflow as tf
+from Setting import *
 
-filename_queue = tf.train.string_input_producer(['data/data-01-test-score.csv'], shuffle=False, name='filename_queue')
+filename_queue = tf.train.string_input_producer([DATA_PATH + 'data-01-test-score.csv'], shuffle=False, name='filename_queue')
 reader = tf.TextLineReader()
 key, value = reader.read(filename_queue)
 

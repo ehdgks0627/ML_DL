@@ -1,7 +1,8 @@
 import tensorflow as tf
 import numpy as np
+from Setting import *
 
-xy = np.loadtxt('data/data-01-test-score.csv', delimiter=',', dtype=np.float32)
+xy = np.loadtxt(DATA_PATH + 'data-01-test-score.csv', delimiter=',', dtype=np.float32)
 x_data = xy[:, 0:-1]
 y_data = xy[:, [-1]]
 
