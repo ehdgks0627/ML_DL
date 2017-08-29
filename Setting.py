@@ -1,1 +1,0 @@
-DATA_PATH = "/Users/sprout/Desktop/projects/ML_DL/data/"
