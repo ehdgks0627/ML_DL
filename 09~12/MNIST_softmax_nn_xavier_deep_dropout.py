@@ -21,7 +21,7 @@ keep_prob = tf.placeholder(tf.float32)
 W1 = tf.get_variable("W1", shape=[784, 512], initializer=tf.contrib.layers.xavier_initializer())
 b1 = tf.Variable(tf.random_normal([512]))
 L1 = tf.nn.relu(tf.matmul(X, W1) + b1)
-L1 = tf.nn.d¬ropout(L1, keep_prob=keep_prob)
+L1 = tf.nn.dropout(L1, keep_prob=keep_prob)
 
 W2 = tf.get_variable("W2", shape=[512, 512], initializer=tf.contrib.layers.xavier_initializer())
 b2 = tf.Variable(tf.random_normal([512]))
